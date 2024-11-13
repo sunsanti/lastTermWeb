@@ -117,10 +117,23 @@ body{
     animation: move 0.6s;
 }
 
-.container.active .sign-up p{
+/* .container.active .sign-up .message {
     display: flex;
-    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start; 
+    color: blue;
+    margin: -5px 5px;
+    font-size: 12px;
+} */
+
+.container form .message {
+    align-self: flex-start; /* Căn lề trái cho .message */
+    display: flex;
+    color: #ffffff;
+    margin: -5px 5px;
+    font-size: 12px;
 }
+
 
 @keyframes move{
     0%, 49.99%{
